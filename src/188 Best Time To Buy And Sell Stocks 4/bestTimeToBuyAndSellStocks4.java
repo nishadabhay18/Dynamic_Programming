@@ -12,7 +12,7 @@ class bestTimeToBuyAndSellStocks4 {
         return profit;
     }
 
-    //     RECURSION+MEMOIZATION TC->O(n*2*k) SC->O(n*2*k)+O(n)
+    // RECURSION+MEMOIZATION TC->O(n*2*k) SC->O(n*2*k)+O(n)
     public int maxProfit(int k, int[] prices) {
         int n = prices.length;
         Integer[][][] dp = new Integer[n][2][k+1]; // cap-> k to 0
@@ -29,7 +29,7 @@ class bestTimeToBuyAndSellStocks4 {
         return dp[idx][buy][cap] = profit;
     }
 
-    //     TABULATION TC->O(n*2*k) SC->O(n*2*k)
+    // TABULATION TC->O(n*2*k) SC->O(n*2*k)
     public int maxProfit(int k, int[] prices) {
         int n = prices.length;
         int[][][] dp = new int[n+1][2][k+1]; // cap-> k to 0
