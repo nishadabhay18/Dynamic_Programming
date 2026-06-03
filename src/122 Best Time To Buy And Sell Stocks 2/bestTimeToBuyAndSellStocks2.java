@@ -1,5 +1,5 @@
 class bestTimeToBuyAndSellStocks2 {
-    // RECURSION TC->O(2^n) SC->O(n)
+    // RECURSION TC-> O(2^n) SC-> O(n)
     public int maxProfit(int[] prices) {
         return helper(prices, 0, true);
     }
